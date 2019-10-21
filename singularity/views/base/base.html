@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+        {% block head %}
+        <title>
+                {% block title %} Singularity {% endblock %}
+        </title>
+        {% endblock %}
+    
+
+<body class="animsition js-preloader">
+    <div class="page-wrapper">
+        {% include "base/header.html" %}
+
+        {% block content %}
+
+        {% endblock %}
+
+        {% include "base/footer.html" %}
+    </div>
+    
+        {% block script %}
+        {% endblock %}
+
+</body>
+
+</html>
+<!-- end document-->

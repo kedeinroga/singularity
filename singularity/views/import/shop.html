@@ -1,0 +1,674 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+
+{% block head %}
+<head>
+        <!-- Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Tatee Theme Templates">
+        <meta name="author" content="AuCreative">
+        <meta name="keywords" content="Tatee Theme Templates">
+    
+        <!-- Title Page-->
+        <title>Shop</title>
+    
+        <!-- Icons font CSS-->
+        <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+        <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+        <link href="vendor/themify-font/themify-icons.css" rel="stylesheet" media="all">
+        <!-- Base fonts of theme-->
+        <link href="css/poppins-font.min.css" rel="stylesheet" media="all">
+        <!-- Font special for pages-->
+    
+        <!-- Bootstrap CSS-->
+        <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    
+        <!-- Vendor CSS-->
+        <link href="vendor/animate.css/animate.min.css" rel="stylesheet" media="all">
+        <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+        <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+        <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+        <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    
+        <!-- Main CSS-->
+        <link href="css/main.min.css" rel="stylesheet" media="all">
+    
+        <!--Favicons-->
+        <link rel="shortcut icon" href="images/icon/favicon.jpg">
+        <link rel="apple-touch-icon" href="https://freebw.com/templates/tatee/apple-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://freebw.com/templates/tatee/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://freebw.com/templates/tatee/apple-icon-114x114.png">
+    </head>
+{% endblock %}
+
+
+
+{% block content %}
+
+<!-- MAIN-->
+<main id="main">
+        <!-- PAGE LINE-->
+        <div class="page-line">
+            <div class="container">
+                <div class="page-line__inner">
+                    <div class="page-col"></div>
+                    <div class="page-col"></div>
+                    <div class="page-col"></div>
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE LINE-->
+
+        <!-- PAGE HEADING-->
+        <section class="section p-t-100 p-b-65">
+            <div class="container">
+                <div class="page-heading">
+                    <h4 class="title-sub title-sub--c8 m-b-15">TATEE shop</h4>
+                    <h2 class="title-2">We provide the best items for your place</h2>
+                </div>
+            </div>
+        </section>
+        <!-- END PAGE HEADING-->
+
+        <!-- SHOP-->
+        <section class="section p-b-65">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-9">
+                        <div class="woocommerce-result-count-wrap">
+                            <p class="woocommerce-result-count">Showing 1 -9 of 18 results</p>
+                            <form class="woocommerce-ordering" method="GET">
+                                <div class="rs1-select2 js-select-simple select--no-search">
+                                    <select class="orderby" name="orderby">
+                                        <option value="newness" selected="selected">Sort by newness</option>
+                                        <option value="rating">Sort by rating</option>
+                                        <option value="popularity">Sort by popularity</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <article class="product">
+                                    <figure class="product-thumbnail-wrap">
+                                        <div class="product-thumbnail">
+                                            <img src="images/product-01.png" alt="Product 1">
+                                        </div>
+                                        <div class="woocommerce-add-to-cart">
+                                            <a class="add_to_cart_button" href="shop.html#">add to cart</a>
+                                        </div>
+                                        <a class="product-link" href="product-detail.html"></a>
+                                    </figure>
+                                    <div class="product-content">
+                                        <h4 class="product-name">
+                                            <a href="shop.html#">diamond lamp</a>
+                                        </h4>
+                                        <div class="product-price">
+                                            <span>$46</span>
+                                        </div>
+                                        <ul class="list-rating">
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star-half"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="product">
+                                    <figure class="product-thumbnail-wrap">
+                                        <div class="product-thumbnail">
+                                            <img src="images/product-02.png" alt="Product 2">
+                                        </div>
+                                        <div class="woocommerce-add-to-cart">
+                                            <a class="add_to_cart_button" href="shop.html#">add to cart</a>
+                                        </div>
+                                        <a class="product-link" href="product-detail.html"></a>
+                                        <span class="onsale">sale</span>
+                                    </figure>
+                                    <div class="product-content">
+                                        <h4 class="product-name">
+                                            <a href="shop.html#">modern chair</a>
+                                        </h4>
+                                        <div class="product-price">
+                                            <del>$36</del>
+                                            <span class="price-sale">$26</span>
+                                        </div>
+                                        <ul class="list-rating">
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star-half"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="product">
+                                    <figure class="product-thumbnail-wrap">
+                                        <div class="product-thumbnail">
+                                            <img src="images/product-03.png" alt="Product 3">
+                                        </div>
+                                        <div class="woocommerce-add-to-cart">
+                                            <a class="add_to_cart_button" href="shop.html#">add to cart</a>
+                                        </div>
+                                        <a class="product-link" href="product-detail.html"></a>
+                                        <span class="hot">hot</span>
+                                    </figure>
+                                    <div class="product-content">
+                                        <h4 class="product-name">
+                                            <a href="shop.html#">black vase</a>
+                                        </h4>
+                                        <div class="product-price">
+                                            <span>$20</span>
+                                        </div>
+                                        <ul class="list-rating">
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star-half"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="product">
+                                    <figure class="product-thumbnail-wrap">
+                                        <div class="product-thumbnail">
+                                            <img src="images/product-04.png" alt="Product 4">
+                                        </div>
+                                        <div class="woocommerce-add-to-cart">
+                                            <a class="add_to_cart_button" href="shop.html#">add to cart</a>
+                                        </div>
+                                        <a class="product-link" href="product-detail.html"></a>
+                                    </figure>
+                                    <div class="product-content">
+                                        <h4 class="product-name">
+                                            <a href="shop.html#">blue chair</a>
+                                        </h4>
+                                        <div class="product-price">
+                                            <span>$24</span>
+                                        </div>
+                                        <ul class="list-rating">
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star-half"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="product">
+                                    <figure class="product-thumbnail-wrap">
+                                        <div class="product-thumbnail">
+                                            <img src="images/product-05.png" alt="Product 5">
+                                        </div>
+                                        <div class="woocommerce-add-to-cart">
+                                            <a class="add_to_cart_button" href="shop.html#">add to cart</a>
+                                        </div>
+                                        <a class="product-link" href="product-detail.html"></a>
+                                        <span class="hot">hot</span>
+                                    </figure>
+                                    <div class="product-content">
+                                        <h4 class="product-name">
+                                            <a href="shop.html#">minimal table</a>
+                                        </h4>
+                                        <div class="product-price">
+                                            <span>$59</span>
+                                        </div>
+                                        <ul class="list-rating">
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star-half"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="product">
+                                    <figure class="product-thumbnail-wrap">
+                                        <div class="product-thumbnail">
+                                            <img src="images/product-06.png" alt="Product 6">
+                                        </div>
+                                        <div class="woocommerce-add-to-cart">
+                                            <a class="add_to_cart_button" href="shop.html#">add to cart</a>
+                                        </div>
+                                        <a class="product-link" href="product-detail.html"></a>
+                                    </figure>
+                                    <div class="product-content">
+                                        <h4 class="product-name">
+                                            <a href="shop.html#">flower vase</a>
+                                        </h4>
+                                        <div class="product-price">
+                                            <span>$56</span>
+                                        </div>
+                                        <ul class="list-rating">
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star-half"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="product">
+                                    <figure class="product-thumbnail-wrap">
+                                        <div class="product-thumbnail">
+                                            <img src="images/product-07.png" alt="Product 7">
+                                        </div>
+                                        <div class="woocommerce-add-to-cart">
+                                            <a class="add_to_cart_button" href="shop.html#">add to cart</a>
+                                        </div>
+                                        <a class="product-link" href="product-detail.html"></a>
+                                        <span class="onsale">sale</span>
+                                    </figure>
+                                    <div class="product-content">
+                                        <h4 class="product-name">
+                                            <a href="shop.html#">office decor panther</a>
+                                        </h4>
+                                        <div class="product-price">
+                                            <del>$26</del>
+                                            <span class="price-sale">$16</span>
+                                        </div>
+                                        <ul class="list-rating">
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star-half"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="product">
+                                    <figure class="product-thumbnail-wrap">
+                                        <div class="product-thumbnail">
+                                            <img src="images/product-08.png" alt="Product 8">
+                                        </div>
+                                        <div class="woocommerce-add-to-cart">
+                                            <a class="add_to_cart_button" href="shop.html#">add to cart</a>
+                                        </div>
+                                        <a class="product-link" href="product-detail.html"></a>
+                                    </figure>
+                                    <div class="product-content">
+                                        <h4 class="product-name">
+                                            <a href="shop.html#">Golden pineapple</a>
+                                        </h4>
+                                        <div class="product-price">
+                                            <span>$26</span>
+                                        </div>
+                                        <ul class="list-rating">
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star-half"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <article class="product">
+                                    <figure class="product-thumbnail-wrap">
+                                        <div class="product-thumbnail">
+                                            <img src="images/product-09.png" alt="Product 9">
+                                        </div>
+                                        <div class="woocommerce-add-to-cart">
+                                            <a class="add_to_cart_button" href="shop.html#">add to cart</a>
+                                        </div>
+                                        <a class="product-link" href="product-detail.html"></a>
+                                    </figure>
+                                    <div class="product-content">
+                                        <h4 class="product-name">
+                                            <a href="shop.html#">circle table</a>
+                                        </h4>
+                                        <div class="product-price">
+                                            <span>$56</span>
+                                        </div>
+                                        <ul class="list-rating">
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star"></i>
+                                            </li>
+                                            <li class="list-rating__item">
+                                                <i class="zmdi zmdi-star-half"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <nav class="woocommerce-pagination">
+                            <div class="nav-links">
+                                <ul class="page-numbers">
+                                    <li>
+                                        <a class="page-number prev" href="shop.html#">
+                                            <span class="ti-arrow-left"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="page-number current">01</span>
+                                    </li>
+                                    <li>
+                                        <a class="page-number" href="shop.html#">02</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-number next" href="shop.html#">
+                                            <span class="ti-arrow-right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <aside class="widget-area widget-sidebar">
+                            <div class="widget widget_search">
+                                <form class="search-form" method="GET" action="shop.html#">
+                                    <input class="search-field" type="text" placeholder="Search here...">
+                                    <button class="search-submit" type="submit">
+                                        <span class="ti-search"></span>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="widget widget_categories">
+                                <h4 class="widget-title">Categories</h4>
+                                <ul>
+                                    <li class="cat-item">
+                                        <a href="shop.html#">Lighting</a>
+                                        <span class="cat-count">(10)</span>
+                                    </li>
+                                    <li class="cat-item">
+                                        <a href="shop.html#">Chair</a>
+                                        <span class="cat-count">(22)</span>
+                                    </li>
+                                    <li class="cat-item">
+                                        <a href="shop.html#">Table</a>
+                                        <span class="cat-count">(23)</span>
+                                    </li>
+                                    <li class="cat-item">
+                                        <a href="shop.html#">Decor Items</a>
+                                        <span class="cat-count">(34)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="widget woocommerce widget_price_filter">
+                                <h4 class="widget-title">Filter by price</h4>
+                                <div class="filter-price">
+                                    <div class="filter-bar">
+                                        <div class="bar-not-fill" id="pricepicker"></div>
+                                    </div>
+                                    <div class="filter-bottom">
+                                        <p class="price-range">
+                                            <span>Price:</span>
+                                            <span id="lower-value">$10</span>
+                                            <span>-</span>
+                                            <span id="upper-value">$62</span>
+                                        </p>
+                                        <a class="filter-link" href="shop.html#">Filter</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget widget_popular_products">
+                                <h4 class="widget-title">Popular product</h4>
+                                <ul class="product_list_widget">
+                                    <li class="product_list_widget__item">
+                                        <div class="product-thumbnail">
+                                            <a href="product-detail.html">
+                                                <img src="images/product-sm-01.png" alt="Product 1">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h4 class="product-title">
+                                                <a href="product-detail.html">black vase</a>
+                                            </h4>
+                                            <span class="product-price">$20</span>
+                                            <ul class="list-rating">
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star-half"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="product_list_widget__item">
+                                        <div class="product-thumbnail">
+                                            <a href="product-detail.html">
+                                                <img src="images/product-sm-02.png" alt="Product 2">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h4 class="product-title">
+                                                <a href="product-detail.html">black vase</a>
+                                            </h4>
+                                            <span class="product-price">$20</span>
+                                            <ul class="list-rating">
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star-half"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="product_list_widget__item">
+                                        <div class="product-thumbnail">
+                                            <a href="product-detail.html">
+                                                <img src="images/product-sm-03.png" alt="Product 3">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h4 class="product-title">
+                                                <a href="product-detail.html">black vase</a>
+                                            </h4>
+                                            <span class="product-price">$20</span>
+                                            <ul class="list-rating">
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star-half"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="product_list_widget__item">
+                                        <div class="product-thumbnail">
+                                            <a href="product-detail.html">
+                                                <img src="images/product-sm-04.png" alt="Product 4">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h4 class="product-title">
+                                                <a href="product-detail.html">black vase</a>
+                                            </h4>
+                                            <span class="product-price">$20</span>
+                                            <ul class="list-rating">
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star"></i>
+                                                </li>
+                                                <li class="list-rating__item">
+                                                    <i class="zmdi zmdi-star-half"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SHOP-->
+    </main>
+    <!-- END MAIN-->
+
+    {% endblock %}
+
+
+
+{% block script %}
+
+<!-- Jquery JS-->
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vendor/jquery/jquery.min.js"></script>
+<!-- Bootstrap JS-->
+<script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+<!-- Vendor JS-->
+<script src="vendor/animsition/animsition.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
+<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+<script src="vendor/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendor/matchHeight/jquery.matchHeight-min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/sweetalert/sweetalert.min.js"></script>
+<script src="vendor/noUiSlider/nouislider.min.js"></script>
+
+<!-- Main JS-->
+<script src="js/global.js"></script>
+
+{% endblock %}

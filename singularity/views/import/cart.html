@@ -1,0 +1,173 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+<head>
+        <!-- Required meta tags-->
+        <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta name="description" content="Singularity">
+                <meta name="author" content="Roga">
+                <meta name="keywords" content="Singularity">
+            
+                <title>
+                        {% block title %} Cart {% endblock %}
+                </title>
+    
+        <!-- Icons font CSS-->
+        <link href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/font-awesome-5/css/fontawesome-all.min.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/themify-font/themify-icons.css' %}" rel="stylesheet" media="all">
+        <!-- Base fonts of theme-->
+        <link href="{% static 'css/poppins-font.min.css' %}" rel="stylesheet" media="all">
+        <!-- Font special for pages-->
+    
+        <!-- Bootstrap CSS-->
+        <link href="{% static 'vendor/bootstrap-4.1/bootstrap.min.css' %}" rel="stylesheet" media="all">
+    
+        <!-- Vendor CSS-->
+        <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/animsition/animsition.min.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/slick/slick.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+    
+        <!-- Main CSS-->
+        <link href="{% static 'css/main.min.css' %}" rel="stylesheet" media="all">
+    
+        <!--Favicons-->
+        <link rel="shortcut icon" href="{% static 'images/icon/favicon.png' %}">
+        
+    </head>
+{% endblock %}
+
+{% block content %}
+
+
+<!-- MAIN-->
+<main id="main">
+        <!-- CART-->
+        <section class="section cart">
+            <div class="container">
+                <header class="entry-header">
+                    <h2 class="entry-title">My cart</h2>
+                </header>
+                <div class="entry-content">
+                    <div class="woocommerce">
+                        <form class="woocommerce-cart-form" method="post">
+                            <table class="table woocommerce-cart-table shop_table shop_table_responsive cart woocommerce-cart-form__contents table-cart">
+                                <thead>
+                                    <tr class="shop_table_title table-cart__title">
+                                        <th class="product-remove"></th>
+                                        <th class="product-thumbnail">Product</th>
+                                        <th class="product-price">Price</th>
+                                        <th class="product-quantity">Quantity</th>
+                                        <th class="product-subtotal">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="woocommerce-cart-form__cart-item cart_item">
+                                        <td class="product-remove">
+                                            <a class="remove" href="cart.html#">
+                                                <span class="ti-close"></span>
+                                            </a>
+                                        </td>
+                                        <td class="product-thumbnail" data-title="Product Name">
+                                            <div class="product-thumbnail__inner">
+                                                <a class="img-cart" href="cart.html#">
+                                                    <img class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" src="{% static 'images/product-13.jpg' %}" alt="Product 1">
+                                                </a>
+                                                <a class="product-name" href="cart.html#">WHITE LAMP</a>
+                                            </div>
+                                        </td>
+                                        <td class="product-price" data-title="Price">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">$</span>40</span>
+                                        </td>
+                                        <td class="product-quantity" data-title="Quantity">
+                                            <div class="qty-box js-qty">
+                                                <div class="qty-btn qty-btn--down">
+                                                    <span>-</span>
+                                                </div>
+                                                <input type="number" min="1" max="99" step="1" value="1">
+                                                <div class="qty-btn qty-btn--up">
+                                                    <span>+</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal" data-title="Subtotal">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">$</span>40</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="table-cart__footer">
+                                        <td colspan="5">
+                                            <div class="table-cart__footer-inner">
+                                                <div class="coupon">
+                                                    <input class="au-input-2" type="text" placeholder="Coupon code">
+                                                    <button class="au-btn au-btn--solid">Apply coupon</button>
+                                                </div>
+                                                <a class="au-btn au-btn--solid float-md-right" href="cart.html#">Update cart</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </form>
+                        <div class="cart_totals">
+                            <h3 class="cart_totals-title">Cart totals</h3>
+                            <div class="woocommerce-cart-subtotal cart-subtotal">
+                                <div class="cart-subtotal__item">
+                                    <div class="title">Subtotal</div>
+                                    <div class="value">
+                                        <span class="woocommerce-Price-amount">
+                                            <span class="woocommerce-Price-currencySymbol">$</span>40</span>
+                                    </div>
+                                </div>
+                                <div class="cart-subtotal__item">
+                                    <div class="title">Total</div>
+                                    <div class="value">
+                                        <span class="woocommerce-Price-amount">
+                                            <span class="woocommerce-Price-currencySymbol">$</span>40</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wc-proceed-to-checkout">
+                            <a class="au-btn au-btn--solid" href="checkout.html">Proceed to checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END CART-->
+    </main>
+    <!-- END MAIN-->
+    {% endblock %}
+
+
+
+{% block script %}
+<!-- Jquery JS-->
+<script data-cfasync="false" src="{% static '../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<!-- Bootstrap JS-->
+<script src="{% static 'vendor/bootstrap-4.1/bootstrap.min.js' %}"></script>
+<!-- Vendor JS-->
+<script src="{% static 'vendor/animsition/animsition.min.js' %}"></script>
+<script src="{% static 'vendor/slick/slick.min.js' %}"></script>
+<script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'vendor/wow/wow.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.counterup/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'vendor/isotope/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/isotope/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/matchHeight/jquery.matchHeight-min.js' %}"></script>
+<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+<script src="{% static 'vendor/sweetalert/sweetalert.min.js' %}"></script>
+<script src="{% static 'vendor/noUiSlider/nouislider.min.js' %}"></script>
+
+<!-- Main JS-->
+<script src="{% static 'js/global.js' %}"></script>
+
+{% endblock %}

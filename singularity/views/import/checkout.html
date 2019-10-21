@@ -1,0 +1,277 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+
+{% block head %}
+<head>
+        <!-- Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Tatee Theme Templates">
+        <meta name="author" content="AuCreative">
+        <meta name="keywords" content="Tatee Theme Templates">
+    
+        <!-- Title Page-->
+        <title>Checkout</title>
+    
+        <!-- Icons font CSS-->
+        <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+        <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+        <link href="vendor/themify-font/themify-icons.css" rel="stylesheet" media="all">
+        <!-- Base fonts of theme-->
+        <link href="css/poppins-font.min.css" rel="stylesheet" media="all">
+        <!-- Font special for pages-->
+    
+        <!-- Bootstrap CSS-->
+        <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    
+        <!-- Vendor CSS-->
+        <link href="vendor/animate.css/animate.min.css" rel="stylesheet" media="all">
+        <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+        <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+        <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+        <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    
+        <!-- Main CSS-->
+        <link href="css/main.min.css" rel="stylesheet" media="all">
+    
+        <!--Favicons-->
+        <link rel="shortcut icon" href="images/icon/favicon.jpg">
+        <link rel="apple-touch-icon" href="https://freebw.com/templates/tatee/apple-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://freebw.com/templates/tatee/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://freebw.com/templates/tatee/apple-icon-114x114.png">
+    </head>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+
+<!-- MAIN-->
+<main id="main">
+        <!-- CART-->
+        <section class="section checkout">
+            <div class="container">
+                <header class="entry-header">
+                    <h2 class="entry-title">Checkout</h2>
+                </header>
+                <div class="entry-content">
+                    <div class="woocommerce-info">
+                        <span>Return customer?</span>
+                        <a class="collapsed showlogin" href="checkout.html#login" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="login">Click here to login</a>
+                    </div>
+                    <form class="woocommerce-form woocommerce-form-login form-login collapse" action="checkout.html#" method="POST" id="login">
+                        <div class="form-group">
+                            <label class="form-label">Username or Email address *</label>
+                            <input class="au-input-2" type="text" name="username">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Password *</label>
+                            <input class="au-input-2" type="text" name="username">
+                        </div>
+                        <div class="form-action">
+                            <button class="au-btn au-btn--solid au-btn-xl" type="submit">Login</button>
+                            <div class="form-group form-group--check">
+                                <input class="au-checkbox" type="checkbox" checked="checked" id="cb-rem">
+                                <label for="cb-rem">Remember me</label>
+                            </div>
+                        </div>
+                        <a class="link-2" href="checkout.html#">Lost your password ?</a>
+                    </form>
+                    <div class="woocommerce-info">
+                        <span>Have a coupon ?</span>
+                        <a class="collapsed showlogin" href="checkout.html#coupon" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="coupon">Click here to enter our code</a>
+                    </div>
+                    <form class="woocommerce-form woocommerce-form-coupon form-coupon collapse" action="checkout.html#" method="POST" id="coupon">
+                        <div class="coupon">
+                            <input class="au-input-2" type="text" placeholder="Coupon code">
+                            <button class="au-btn au-btn--solid">Apply coupon</button>
+                        </div>
+                    </form>
+                    <form class="woocommerce-checkout">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="woocommerce-billing-fields">
+                                    <h3 class="title-7 m-b-15">Billing details</h3>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">First Name
+                                                    <span class="required">*</span>
+                                                </label>
+                                                <input class="au-input-2" type="text" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Last Name
+                                                    <span class="required">*</span>
+                                                </label>
+                                                <input class="au-input-2" type="text" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Company Name</label>
+                                        <input class="au-input-2" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Country
+                                            <span class="required">*</span>
+                                        </label>
+                                        <div class="rs1-select2 js-select-simple select--no-search rs1-select2--lower m-b-20">
+                                            <select name="country">
+                                                <option>USA</option>
+                                                <option>UK</option>
+                                                <option>VietNam</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Street address
+                                            <span class="required">*</span>
+                                        </label>
+                                        <input class="au-input-2" type="text" placeholder="House number and street name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Postcode / ZIP</label>
+                                        <input class="au-input-2" type="text" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Town / City
+                                            <span class="required">*</span>
+                                        </label>
+                                        <input class="au-input-2" type="text" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Phone
+                                            <span class="required">*</span>
+                                        </label>
+                                        <input class="au-input-2" type="text" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Email Address
+                                            <span class="required">*</span>
+                                        </label>
+                                        <input class="au-input-2" type="email" required>
+                                    </div>
+                                    <div class="form-group form-group--check m-t-0 m-b-47">
+                                        <input class="au-checkbox" type="checkbox" checked="checked" id="cre1">
+                                        <label for="cre1">Create an account?</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="woocommerce-additional-fields">
+                                    <h3 class="title-7 m-b-15">Additional information</h3>
+                                    <div class="form-group">
+                                        <label class="au-label-2">Order Note</label>
+                                        <textarea class="au-textarea-2" name="order-note" placeholder="Note about your order, eg. special notes fordelivery."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="woocommerce-checkout-review-order">
+                        <h3 class="title-7 m-b-15">Your order</h3>
+                        <table class="shop_table woocommerce-checkout-review-order-table">
+                            <thead>
+                                <tr>
+                                    <th class="product-name">product</th>
+                                    <th class="product-total">total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="cart_item">
+                                    <td class="product-name">Black Lamp x 1</td>
+                                    <td class="product-total">
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">$</span>40</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="cart-subtotal">
+                                    <th>Subtotal</th>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">$</span>40</span>
+                                    </td>
+                                </tr>
+                                <tr class="shipping-subtotal">
+                                    <th>Shipping</th>
+                                    <td>Free shipping</td>
+                                </tr>
+                                <tr class="order-total">
+                                    <th>Total</th>
+                                    <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">$</span>40</span>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="woocommerce-checkout-payment">
+                        <ul class="wc_payment_methods">
+                            <li class="wc_payment_method payment_method_cheque">
+                                <div class="form-group form-group--check m-t-0 m-b-47">
+                                    <input class="au-checkbox" type="checkbox" checked="checked" id="cre2">
+                                    <label for="cre2">Check payment</label>
+                                </div>
+                                <div class="payment_box payment_method_cheque">
+                                    <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                </div>
+                            </li>
+                            <li class="wc_payment_method payment_method_paypal">
+                                <div class="form-group form-group--check m-t-0 m-b-47">
+                                    <input class="au-checkbox" type="checkbox" id="cre3">
+                                    <label for="cre3">paypal</label>
+                                </div>
+                                <span class="payment_desc">
+                                    <img src="images/icon/paypal.png" alt="Paypal">
+                                    <a href="checkout.html#">What is Paypal?</a>
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="place-order">
+                            <a class="au-btn au-btn--solid au-btn-lg" href="checkout.html#">Place order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END CART-->
+    </main>
+    <!-- END MAIN-->
+
+    {% endblock %}
+
+
+
+{% block script %}
+
+<!-- Jquery JS-->
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vendor/jquery/jquery.min.js"></script>
+<!-- Bootstrap JS-->
+<script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+<!-- Vendor JS-->
+<script src="vendor/animsition/animsition.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
+<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+<script src="vendor/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendor/matchHeight/jquery.matchHeight-min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/sweetalert/sweetalert.min.js"></script>
+<script src="vendor/noUiSlider/nouislider.min.js"></script>
+
+<!-- Main JS-->
+<script src="js/global.js"></script>
+
+{% endblock %}

@@ -1,0 +1,595 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+        {% block head %}
+        <head>
+
+                <!-- Required meta tags-->
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta name="description" content="Singularity">
+                <meta name="author" content="Roga">
+                <meta name="keywords" content="Singularity">
+            
+                <title>
+                        {% block title %} Inicio {% endblock %}
+                </title>
+            
+            
+               
+                
+                <!-- Icons font CSS-->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
+                <link href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+                <link href="{% static 'vendor/font-awesome-5/css/fontawesome-all.min.css' %}" rel="stylesheet" media="all">
+                <link href="{% static 'vendor/themify-font/themify-icons.css' %}" rel="stylesheet" media="all">
+                <!-- Base fonts of theme-->
+                <link href="{% static 'css/poppins-font.min.css' %}" rel="stylesheet" media="all">
+                <!-- Font special for pages-->
+            
+                <!-- Bootstrap CSS-->
+                <link href="{% static 'vendor/bootstrap-4.1/bootstrap.min.css' %}" rel="stylesheet" media="all">
+            
+                <!-- Vendor CSS-->
+                <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet" media="all">
+                <link href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}" rel="stylesheet" media="all">
+                <link href="{% static 'vendor/animsition/animsition.min.css' %}" rel="stylesheet" media="all">
+                <link href="{% static 'vendor/slick/slick.css' %}" rel="stylesheet" media="all">
+                <link href="{% static 'vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+                <link href="{% static 'vendor/revolution/css/layers.css' %}" rel="stylesheet" />
+                <link href="{% static 'vendor/revolution/css/navigation.css' %}" rel="stylesheet" />
+                <link href="{% static 'vendor/revolution/css/settings.css' %}" rel="stylesheet" />
+            
+                <!-- Main CSS-->
+                <link href="{% static 'css/main.min.css' %}" rel="stylesheet" media="all">
+            
+                <!--Favicons-->
+                <link rel="shortcut icon" href="{% static "images/icon/favicon.png" %}">
+                
+            </head>
+        {% endblock %}
+
+{% block content %}
+
+<!-- MAIN-->
+<main id="main">
+    <!-- PAGE LINE-->
+    <div class="page-line">
+        <div class="container">
+            <div class="page-line__inner">
+                <div class="page-col"></div>
+                <div class="page-col"></div>
+                <div class="page-col"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END PAGE LINE-->
+    
+    <!-- SLIDER-->
+    <section>
+        <div class="rev_slider_wrapper rev_slider_wrapper--p80 tp-overflow-hidden">
+            <div class="rev_slider fullwidthabanner js-rev" data-version="5.4.4" style="display:none" data-rev-layout="fullscreen" data-rev-stylearrow="au-rev-arrow-1" data-rev-bullets="true" data-rev-stylebullet="au-rev-bullet-1" data-rev-voffbullet="55">
+                <ul>
+                    <li class="rev-item rev-item-1" data-transition="crossfade">
+                        <img class="rev-slidebg" src="{% static 'images/slide-01.jpg' %}" alt="Master Slider 01" />
+                        <h4 class="tp-caption tp-resizeme rev-text-1" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                        data-x="['left']" data-y="['middle']" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-118, -118, -70, -80, -80]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="['auto']" data-height="[&quot;auto&quot;]"
+                        data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]" data-color="#fff" data-fontweight="400" data-fontsize="[11, 11, 18, 20, 20]" data-textalign="[left, left, left, center, center]">arquitectura</h4>
+                        <h2 class="tp-caption tp-resizeme rev-text-2" data-frames="[{&quot;delay&quot;:800,&quot;speed&quot;:2100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                        data-x="[left]" data-y="[center]" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-35, -30, 15, 10, 10]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="[600,600,500,576,500]" data-height="[&quot;auto&quot;]"
+                        data-lineheight="[60, 60, 45, 50, 45]" data-whitespace="normal" data-color="#fff" data-fontweight="700" data-fontsize="[48, 48, 46, 42, 46]" data-textalign="[left, left, left, left, left]">Una hermosa vista que ayuda al ambiente</h2>
+                        <a class="tp-caption tp-resizeme" href="home-main.html#" target="_self" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                        data-x="[left]" data-y="[center]" data-hoffset="[0, 0, 0, 0, 15]" data-voffset="[87, 87, 130, 130, 130]" data-width="['auto']" data-height="[&quot;auto&quot;]" data-responsive_offset="on" data-responsive="off" data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]">
+                            <span class="rev-btn-1">See project
+                                <span class="arrow" data-paddingleft="5">
+                                    <i class="zmdi zmdi-arrow-right"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="rev-item rev-item-1" data-transition="slotslide-horizontal">
+                        <img class="rev-slidebg" src="{% static 'images/slide-12.jpg' %}" alt="Master Slider 01" />
+                        <h4 class="tp-caption tp-resizeme rev-text-1" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                        data-x="['left']" data-y="['middle']" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-118, -118, -70, -80, -80]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="['auto']" data-height="[&quot;auto&quot;]"
+                        data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]" data-color="#fff" data-fontweight="400" data-fontsize="[11, 11, 18, 20, 20]" data-textalign="[left, left, left, center, center]">verde y colorido</h4>
+                        <h2 class="tp-caption tp-resizeme rev-text-2" data-frames="[{&quot;delay&quot;:800,&quot;speed&quot;:2100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                        data-x="[left]" data-y="[center]" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-35, -30, 15, 10, 10]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="[600,600,500,576,500]" data-height="[&quot;auto&quot;]"
+                        data-lineheight="[60, 60, 45, 50, 45]" data-whitespace="normal" data-color="#fff" data-fontweight="700" data-fontsize="[48, 48, 46, 42, 46]" data-textalign="[left, left, left, left, left]">Variedad de plantas ornamentales</h2>
+                        <a class="tp-caption tp-resizeme" href="home-main.html#" target="_self" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                        data-x="[left]" data-y="[center]" data-hoffset="[0, 0, 0, 0, 15]" data-voffset="[87, 87, 130, 130, 130]" data-width="['auto']" data-height="[&quot;auto&quot;]" data-responsive_offset="on" data-responsive="off" data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]">
+                            <span class="rev-btn-1">See project
+                                <span class="arrow" data-paddingleft="5">
+                                    <i class="zmdi zmdi-arrow-right"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="rev-item rev-item-1" data-transition="papercut">
+                        <img class="rev-slidebg" src="{% static 'images/slide-13.jpg' %}" alt="Master Slider 01" />
+                        <h4 class="tp-caption tp-resizeme rev-text-1" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                        data-x="['left']" data-y="['middle']" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-118, -118, -70, -80, -80]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="['auto']" data-height="[&quot;auto&quot;]"
+                        data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]" data-color="#fff" data-fontweight="400" data-fontsize="[11, 11, 18, 20, 20]" data-textalign="[left, left, left, center, center]">aire y agua</h4>
+                        <h2 class="tp-caption tp-resizeme rev-text-2" data-frames="[{&quot;delay&quot;:800,&quot;speed&quot;:2100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                        data-x="[left]" data-y="[center]" data-hoffset="[0, 0, 0, 0, 0]" data-voffset="[-35, -30, 15, 10, 10]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="[600,600,500,576,500]" data-height="[&quot;auto&quot;]"
+                        data-lineheight="[60, 60, 45, 50, 45]" data-whitespace="normal" data-color="#fff" data-fontweight="700" data-fontsize="[48, 48, 46, 42, 46]" data-textalign="[left, left, left, left, left]">Nuestro sistema permite purificar aire y agua</h2>
+                        <a class="tp-caption tp-resizeme" href="home-main.html#" target="_self" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:800,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                        data-x="[left]" data-y="[center]" data-hoffset="[0, 0, 0, 0, 15]" data-voffset="[87, 87, 130, 130, 130]" data-width="['auto']" data-height="[&quot;auto&quot;]" data-responsive_offset="on" data-responsive="off" data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]">
+                            <span class="rev-btn-1">See project
+                                <span class="arrow" data-paddingleft="5">
+                                    <i class="zmdi zmdi-arrow-right"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="rev-spacer"></div>
+    </section>
+    <!-- END SLIDER-->
+
+    <!-- ABOUT US-->
+    <section class="p-t-10 p-b-55">
+        <div class="container">
+            <div class="media-about">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="media__body">
+                            <h5 class="title-sub">Nosotros</h5>
+                            <h2 class="title-1">Queremos un lugar ideal para vivir.</h2>
+                            <p class="media__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utins labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco cot laboris nisi ut aliquip ex
+                                ea commodo consequat. Duis aute irure dolor in reprehenderit in vactil oluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.</p>
+                            <a class="au-btn au-btn--arrow" href="about-us.html">Read more
+                                <i class="zmdi zmdi-arrow-right ic-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="media__img js-line">
+                            <img src="{% static 'images/about-01.jpg' %}" alt="About">
+                            <span class="line"></span>
+                            <span class="line line-bottom"></span>
+                            <div class="media__img-inner wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                <span class="number">28</span>
+                                <span class="desc">years of experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT US-->
+
+    <!-- SERVICE-->
+    <section class="p-t-60 p-b-55">
+        <div class="container">
+            <div class="section-title">
+                <h5 class="title-sub">what we do</h5>
+                <h2 class="title-1">Our specilization</h2>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-6 col-lg-4">
+                    <article class="media media-service">
+                        <figure class="media__img">
+                            <img src="{% static 'images/icon/service-01.png' %}" alt="architecture" />
+                        </figure>
+                        <div class="media__title">
+                            <h3 class="title">
+                                <a href="home-main.html#">architecture</a>
+                            </h3>
+                            <span class="number">01</span>
+                        </div>
+                        <p class="media__text">Lorem ipsum dolor sit amet, consectetur adipist pricing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="media media-service">
+                        <figure class="media__img">
+                            <img src="{% static 'images/icon/service-02.png' %}" alt="Interior" />
+                        </figure>
+                        <div class="media__title">
+                            <h3 class="title">
+                                <a href="home-main.html#">Interior</a>
+                            </h3>
+                            <span class="number">02</span>
+                        </div>
+                        <p class="media__text">Lorem ipsum dolor sit amet, consectetur adipist pricing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="media media-service">
+                        <figure class="media__img">
+                            <img src="{% static 'images/icon/service-03.png' %}" alt="planning" />
+                        </figure>
+                        <div class="media__title">
+                            <h3 class="title">
+                                <a href="home-main.html#">planning</a>
+                            </h3>
+                            <span class="number">03</span>
+                        </div>
+                        <p class="media__text">Lorem ipsum dolor sit amet, consectetur adipist pricing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SERVICE-->
+
+    <!-- LASTEST PROJECT-->
+    <section class="wrap wrap--w1790 p-b-75">
+        <div class="section-title m-b-70">
+            <h5 class="title-sub">our work</h5>
+            <h2 class="title-1">Latest project</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="slick-wrap slick-project js-slick-wrapper" data-slick-xs="1" data-slick-sm="1" data-slick-md="3" data-slick-lg="4" data-slick-xl="4" data-slick-dots="false" data-slick-customnav="true" data-slick-autoplay="true">
+                <div class="slick-wrap-content">
+                    <div class="slick-content js-slick-content">
+                        <div class="slick-item">
+                            <article class="media media-project">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-01.jpg' %}" alt="luxury villa" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">luxury villa</a>
+                                    </h3>
+                                    <div class="address">Perth, Australia</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="slick-item">
+                            <article class="media media-project">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-02.jpg' %}" alt="wooden villa" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">wooden villa</a>
+                                    </h3>
+                                    <div class="address">New York, USA</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="slick-item">
+                            <article class="media media-project">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-03.jpg' %}" alt="Skyline" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">Skyline</a>
+                                    </h3>
+                                    <div class="address">Michigan, USA</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="slick-item">
+                            <article class="media media-project">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-04.jpg' %}" alt="Frozen house" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">Frozen house</a>
+                                    </h3>
+                                    <div class="address">Mexico</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="slick-item">
+                            <article class="media media-project">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-29.jpg' %}" alt="luxury villa" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">luxury villa</a>
+                                    </h3>
+                                    <div class="address">Perth, Australia</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="slick-item">
+                            <article class="media media-project">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-30.jpg' %}" alt="wooden villa" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">wooden villa</a>
+                                    </h3>
+                                    <div class="address">New York, USA</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="slick-item">
+                            <article class="media media-project">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-31.jpg' %}" alt="wooden villa" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">wooden villa</a>
+                                    </h3>
+                                    <div class="address">New York, USA</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="slick-item">
+                            <article class="media media-project">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-32.jpg' %}" alt="Skyline" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">Skyline</a>
+                                    </h3>
+                                    <div class="address">Michigan, USA</div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick__nav arrows-1">
+                    <i class="slick-prev slick-arrow js-slick-prev ti-angle-left"></i>
+                    <i class="slick-next slick-arrow js-slick-next ti-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END LASTEST PROJECT-->
+
+    <!-- TESTI-->
+    <section class="p-t-35 p-b-85">
+        <div class="container">
+            <div class="section-title m-b-80">
+                <h5 class="title-sub">testimonial</h5>
+                <h2 class="title-1">What people say</h2>
+            </div>
+            <div class="slick-wrap slick-testi js-slick-wrapper" data-slick-xs="1" data-slick-sm="1" data-slick-md="1" data-slick-lg="2" data-slick-xl="2" data-slick-customnav="true" data-slick-autoplay="true">
+                <div class="slick-wrap-content">
+                    <div class="slick-content js-slick-content">
+                        <div class="slick-item">
+                            <div class="media-testi">
+                                <p class="media__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</p>
+                                <div class="media__title">
+                                    <span class="ti-quote-left quote"></span>
+                                    <h4 class="name">
+                                        <a href="home-main.html#">Pearl Rivera</a>
+                                    </h4>
+                                    <span class="job">Au Founder</span>
+                                </div>
+                                <figure class="media__img img--rounded">
+                                    <img src="{% static 'images/testi-01.jpg' %}" alt="Pearl Rivera" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="slick-item">
+                            <div class="media-testi">
+                                <p class="media__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</p>
+                                <div class="media__title">
+                                    <span class="ti-quote-left quote"></span>
+                                    <h4 class="name">
+                                        <a href="home-main.html#">Ray Owens</a>
+                                    </h4>
+                                    <span class="job">Loco CEO</span>
+                                </div>
+                                <figure class="media__img img--rounded">
+                                    <img src="{% static 'images/testi-02.jpg' %}" alt="Ray Owens" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="slick-item">
+                            <div class="media-testi">
+                                <p class="media__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</p>
+                                <div class="media__title">
+                                    <span class="ti-quote-left quote"></span>
+                                    <h4 class="name">
+                                        <a href="home-main.html#">Megan Fernandez</a>
+                                    </h4>
+                                    <span class="job">BigBit Founder</span>
+                                </div>
+                                <figure class="media__img img--rounded">
+                                    <img src="{% static 'images/testi-03.jpg' %}" alt="Megan Fernandez" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="slick-item">
+                            <div class="media-testi">
+                                <p class="media__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</p>
+                                <div class="media__title">
+                                    <span class="ti-quote-left quote"></span>
+                                    <h4 class="name">
+                                        <a href="home-main.html#">Jack Hopkins</a>
+                                    </h4>
+                                    <span class="job">Bitbucket CEO</span>
+                                </div>
+                                <figure class="media__img img--rounded">
+                                    <img src="{% static 'images/testi-04.jpg' %}" alt="Jack Hopkins" />
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick__nav arrows-1">
+                    <i class="slick-prev slick-arrow js-slick-prev ti-angle-left"></i>
+                    <i class="slick-next slick-arrow js-slick-next ti-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TESTI-->
+
+    <!-- CLIENT-->
+    <section class="p-t-15">
+        <div class="container">
+            <div class="section-title m-b-100">
+                <h5 class="title-sub">awesome partner</h5>
+                <h2 class="title-1">Our clients</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <a class="img-client" href="home-main.html#">
+                        <img src="{% static 'images/icon/client-01.png' %}" alt="Client 1">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a class="img-client" href="home-main.html#">
+                        <img src="{% static 'images/icon/client-02.png' %}" alt="Client 2">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a class="img-client" href="home-main.html#">
+                        <img src="{% static 'images/icon/client-03.png' %}" alt="Client 3">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a class="img-client" href="home-main.html#">
+                        <img src="{% static 'images/icon/client-04.png' %}" alt="Client 4">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a class="img-client" href="home-main.html#">
+                        <img src="{% static 'images/icon/client-05.png' %}" alt="Client 5">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a class="img-client" href="home-main.html#">
+                        <img src="{% static 'images/icon/client-06.png' %}" alt="Client 6">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a class="img-client" href="home-main.html#">
+                        <img src="{% static 'images/icon/client-07.png' %}" alt="Client 7">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a class="img-client" href="home-main.html#">
+                        <img src="{% static 'images/icon/client-08.png' %}" alt="Client 8">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CLIENT-->
+
+    <!-- BLOG-->
+    <section class="p-t-65 p-b-65">
+        <div class="container">
+            <div class="section-title m-b-70">
+                <h5 class="title-sub">from the blog</h5>
+                <h2 class="title-1">Latest new</h2>
+            </div>
+            <div class="row gutter-xl">
+                <div class="col-md-6">
+                    <article class="blog">
+                        <figure class="entry-image">
+                            <a href="blog-grid.html">
+                                <img src="{% static 'images/blog-01.jpg' %}" alt="the  villa overlooks dramatic mountainous scenery" />
+                            </a>
+                        </figure>
+                        <div class="entry-summary">
+                            <h4 class="entry-title">
+                                <a href="blog-grid.html">the villa overlooks dramatic mountainous scenery</a>
+                            </h4>
+                            <span class="entry-meta">12 - August - 2018</span>
+                            <p class="entry-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidis idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ercaus itation ullamco laboris nisi ut aliquip . .
+                                .</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="blog">
+                        <figure class="entry-image">
+                            <a href="blog-grid.html">
+                                <img src="{% static 'images/blog-02.jpg' %}" alt="Will Bruder clads a mountain home in Aspen" />
+                            </a>
+                        </figure>
+                        <div class="entry-summary">
+                            <h4 class="entry-title">
+                                <a href="blog-grid.html">Will Bruder clads a mountain home in Aspen</a>
+                            </h4>
+                            <span class="entry-meta">12 - August - 2018</span>
+                            <p class="entry-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidis idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ercaus itation ullamco laboris nisi ut aliquip . .
+                                .</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END BLOG-->
+</main>
+<!-- END MAIN-->
+
+{% endblock %}
+
+{% block script %}
+
+<!-- Jquery JS-->
+<script data-cfasync="false" src="{% static '../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<!-- Bootstrap JS-->
+<script src="{% static 'vendor/bootstrap-4.1/bootstrap.min.js' %}"></script>
+<!-- Vendor JS-->
+<script src="{% static 'vendor/animsition/animsition.min.js' %}"></script>
+<script src="{% static 'vendor/slick/slick.min.js' %}"></script>
+<script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'vendor/wow/wow.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.counterup/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'vendor/isotope/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/isotope/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/matchHeight/jquery.matchHeight-min.js' %}"></script>
+<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+<script src="{% static 'vendor/sweetalert/sweetalert.min.js' %}"></script>
+<script src="{% static 'vendor/noUiSlider/nouislider.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<!--
+| (Load Extensions only on Local File Systems !
+| The following part can be removed on Server for On Demand Loading)
+-->
+<script type="text/javascript" src="{% static 'vendor/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'vendor/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<!-- Config Revolution Slider-->
+<script type="text/javascript" src="{% static 'js/config-revolution.min.js' %}"></script>
+
+<!-- Main JS-->
+<script src="{% static 'js/global.js' %}"></script>
+{% endblock %}

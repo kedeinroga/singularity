@@ -1,0 +1,106 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+<head>
+        <!-- Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Tatee Theme Templates">
+        <meta name="author" content="AuCreative">
+        <meta name="keywords" content="Tatee Theme Templates">
+    
+        <!-- Title Page-->
+        <title>My Account</title>
+    
+        <!-- Icons font CSS-->
+        <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+        <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+        <link href="vendor/themify-font/themify-icons.css" rel="stylesheet" media="all">
+        <!-- Base fonts of theme-->
+        <link href="css/poppins-font.min.css" rel="stylesheet" media="all">
+        <!-- Font special for pages-->
+    
+        <!-- Bootstrap CSS-->
+        <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    
+        <!-- Vendor CSS-->
+        <link href="vendor/animate.css/animate.min.css" rel="stylesheet" media="all">
+        <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+        <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+        <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+        <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    
+        <!-- Main CSS-->
+        <link href="css/main.min.css" rel="stylesheet" media="all">
+    
+        <!--Favicons-->
+        <link rel="shortcut icon" href="images/icon/favicon.jpg">
+        <link rel="apple-touch-icon" href="https://freebw.com/templates/tatee/apple-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://freebw.com/templates/tatee/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://freebw.com/templates/tatee/apple-icon-114x114.png">
+    </head>
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<!-- MAIN-->
+<main id="main">
+        <div class="container">
+            <div class="form-login-wrap">
+                <h2 class="title-2 m-b-60">My account</h2>
+                <form class="form-login" action="my-account.html#" method="POST">
+                    <h3 class="title-5 m-b-25">login</h3>
+                    <div class="form-group">
+                        <label class="form-label">Username or Email address *</label>
+                        <input class="au-input-2" type="text" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Password *</label>
+                        <input class="au-input-2" type="text" name="username">
+                    </div>
+                    <div class="form-action">
+                        <button class="au-btn au-btn--solid au-btn-xl" type="submit">Login</button>
+                        <div class="form-group form-group--check">
+                            <input class="au-checkbox" type="checkbox" checked="checked" id="cb-rem">
+                            <label for="cb-rem">Remember me</label>
+                        </div>
+                    </div>
+                    <a class="link-2" href="my-account.html#">Lost your password ?</a>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- END MAIN-->
+
+    {% endblock %}
+
+
+
+    
+{% block script %}
+
+<!-- Jquery JS-->
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vendor/jquery/jquery.min.js"></script>
+<!-- Bootstrap JS-->
+<script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+<!-- Vendor JS-->
+<script src="vendor/animsition/animsition.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
+<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+<script src="vendor/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendor/matchHeight/jquery.matchHeight-min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/sweetalert/sweetalert.min.js"></script>
+<script src="vendor/noUiSlider/nouislider.min.js"></script>
+
+<!-- Main JS-->
+<script src="js/global.js"></script>
+
+{% endblock %}

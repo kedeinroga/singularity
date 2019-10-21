@@ -1,0 +1,238 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+<head>
+        <!-- Required meta tags-->
+        <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta name="description" content="Singularity">
+                <meta name="author" content="Roga">
+                <meta name="keywords" content="Singularity">
+            
+                <title>
+                        {% block title %} Proyectos {% endblock %}
+                </title>
+    
+        <!-- Icons font CSS-->
+        <link href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/font-awesome-5/css/fontawesome-all.min.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/themify-font/themify-icons.css' %}" rel="stylesheet" media="all">
+        <!-- Base fonts of theme-->
+        <link href="{% static 'css/poppins-font.min.css' %}" rel="stylesheet" media="all">
+        <!-- Font special for pages-->
+    
+        <!-- Bootstrap CSS-->
+        <link href="{% static 'vendor/bootstrap-4.1/bootstrap.min.css' %}" rel="stylesheet" media="all">
+    
+        <!-- Vendor CSS-->
+        <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/animsition/animsition.min.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/slick/slick.css' %}" rel="stylesheet" media="all">
+        <link href="{% static 'vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+    
+        <!-- Main CSS-->
+        <link href="{% static 'css/main.min.css' %}" rel="stylesheet" media="all">
+    
+        <!--Favicons-->
+        <link rel="shortcut icon" href="{% static 'images/icon/favicon.jpg' %}">
+        
+    </head>
+{% endblock %}
+
+{% block content %}
+
+<!-- MAIN-->
+<main id="main">
+        <!-- PAGE LINE-->
+        <div class="page-line">
+            <div class="container">
+                <div class="page-line__inner">
+                    <div class="page-col"></div>
+                    <div class="page-col"></div>
+                    <div class="page-col"></div>
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE LINE-->
+
+        <!-- PAGE HEADING-->
+        <section class="section p-t-100 p-b-65">
+            <div class="container">
+                <div class="page-heading">
+                    <h4 class="title-sub title-sub--c8 m-b-15">Our project</h4>
+                    <h2 class="title-2">We shape our buildings
+                        <br>thereafter they shape us</h2>
+                </div>
+            </div>
+        </section>
+        <!-- END PAGE HEADING-->
+
+        <!-- PROJECT-->
+        <section class="section p-b-120">
+            <div class="wrap wrap--w1790">
+                <div class="container-fluid">
+                    <div class="row gutter-lg">
+                        <div class="col-md-6 col-lg-3">
+                            <article class="media media-project media-project-1">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-01.jpg' %}" alt="luxury villa" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">luxury villa</a>
+                                    </h3>
+                                    <div class="address">Perth, Australia</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <article class="media media-project media-project-1">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-02.jpg' %}" alt="wooden villa" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">wooden villa</a>
+                                    </h3>
+                                    <div class="address">New York, USA</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <article class="media media-project media-project-1">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-03.jpg' %}" alt="Skyline" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">Skyline</a>
+                                    </h3>
+                                    <div class="address">Michigan, USA</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <article class="media media-project media-project-1">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-04.jpg' %}" alt="Frozen house" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">Frozen house</a>
+                                    </h3>
+                                    <div class="address">Mexico</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <article class="media media-project media-project-1">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-29.jpg' %}" alt="luxury villa" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">luxury villa</a>
+                                    </h3>
+                                    <div class="address">Perth, Australia</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <article class="media media-project media-project-1">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-30.jpg' %}" alt="wooden villa" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">wooden villa</a>
+                                    </h3>
+                                    <div class="address">New York, USA</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <article class="media media-project media-project-1">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-31.jpg' %}" alt="wooden villa" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">wooden villa</a>
+                                    </h3>
+                                    <div class="address">New York, USA</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <article class="media media-project media-project-1">
+                                <figure class="media__img">
+                                    <img src="{% static 'images/project-32.jpg' %}" alt="Skyline" />
+                                </figure>
+                                <div class="bg-overlay"></div>
+                                <span class="line"></span>
+                                <span class="line line--bottom"></span>
+                                <div class="media__body">
+                                    <h3 class="title">
+                                        <a href="project-detail-1.html">Skyline</a>
+                                    </h3>
+                                    <div class="address">Michigan, USA</div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="text-center p-t-20">
+                        <a class="au-btn au-btn--c6 au-btn-lg" href="project-grid-full.html#">Load more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END PROJECT-->
+    </main>
+    <!-- MAIN-->
+    {% endblock %}
+
+
+{% block script %}
+<!-- Jquery JS-->
+<script data-cfasync="false" src="{% static '../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<!-- Bootstrap JS-->
+<script src="{% static 'vendor/bootstrap-4.1/bootstrap.min.js' %}"></script>
+<!-- Vendor JS-->
+<script src="{% static 'vendor/animsition/animsition.min.js' %}"></script>
+<script src="{% static 'vendor/slick/slick.min.js' %}"></script>
+<script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'vendor/wow/wow.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.counterup/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'vendor/isotope/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/isotope/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/matchHeight/jquery.matchHeight-min.js' %}"></script>
+<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+<script src="{% static 'vendor/sweetalert/sweetalert.min.js' %}"></script>
+<script src="{% static 'vendor/noUiSlider/nouislider.min.js' %}"></script>
+
+<!-- Main JS-->
+<script src="{% static 'js/global.js' %}"></script>
+{% endblock %}
